@@ -1,0 +1,38 @@
+[33mWARNING[0m:  [26-02-2025 10:52:05] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [26-02-2025 10:52:06] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [26-02-2025 10:52:06] Starting component System
+[36mDEBUG[0m:    [26-02-2025 10:52:06] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [26-02-2025 10:52:06] Starting component SqliteDB
+[36mDEBUG[0m:    [26-02-2025 10:52:06] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [26-02-2025 10:52:06] Starting component Posthog
+[36mDEBUG[0m:    [26-02-2025 10:52:06] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [26-02-2025 10:52:06] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [26-02-2025 10:52:06] Starting component LocalExecutor
+[36mDEBUG[0m:    [26-02-2025 10:52:06] Starting component SegmentAPI
+[36mDEBUG[0m:    [26-02-2025 10:52:06] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [26-02-2025 10:52:06] Started server process [[36m2824[0m]
+[32mINFO[0m:     [26-02-2025 10:52:06] Waiting for application startup.
+[32mINFO[0m:     [26-02-2025 10:52:06] Application startup complete.
+[32mINFO[0m:     [26-02-2025 10:52:06] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [26-02-2025 10:52:21] Backing off send_request(...) for 0.7s (requests.exceptions.ProxyError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000257ADD41160>, 'Connection to proxy.samba.afip.gob.ar timed out. (connect timeout=15)'))))
+[32mINFO[0m:     [26-02-2025 10:52:25] 127.0.0.1:64660 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [26-02-2025 10:52:25] 127.0.0.1:64661 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-02-2025 10:52:25] 127.0.0.1:64661 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-02-2025 10:52:37] Backing off send_request(...) for 0.1s (requests.exceptions.ProxyError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000257ADCF79D0>, 'Connection to proxy.samba.afip.gob.ar timed out. (connect timeout=15)'))))
+[32mINFO[0m:     [26-02-2025 10:52:52] Backing off send_request(...) for 2.3s (requests.exceptions.ProxyError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000257ADD982D0>, 'Connection to proxy.samba.afip.gob.ar timed out. (connect timeout=15)'))))
+[32mINFO[0m:     [26-02-2025 10:52:55] 127.0.0.1:64668 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [26-02-2025 10:52:55] 127.0.0.1:64669 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-02-2025 10:52:55] 127.0.0.1:64669 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-02-2025 10:53:00] 127.0.0.1:64671 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/default HTTP/1.1" 200
+[36mDEBUG[0m:    [26-02-2025 10:53:00] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [26-02-2025 10:53:00] 127.0.0.1:64671 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/4f91f682-915f-42f5-8f17-214f0ea76eeb/query HTTP/1.1" 200
+[31mERROR[0m:    [26-02-2025 10:53:09] Giving up send_request(...) after 4 tries (requests.exceptions.ProxyError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000257ADD98B90>, 'Connection to proxy.samba.afip.gob.ar timed out. (connect timeout=15)'))))
+[32mINFO[0m:     [26-02-2025 10:53:25] Backing off send_request(...) for 0.9s (requests.exceptions.ProxyError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000257ADD99BD0>, 'Connection to proxy.samba.afip.gob.ar timed out. (connect timeout=15)'))))
+[32mINFO[0m:     [26-02-2025 10:53:41] Backing off send_request(...) for 1.6s (requests.exceptions.ProxyError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000257ADD9A0D0>, 'Connection to proxy.samba.afip.gob.ar timed out. (connect timeout=15)'))))
+[32mINFO[0m:     [26-02-2025 10:53:53] 127.0.0.1:64699 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [26-02-2025 10:53:53] 127.0.0.1:64700 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-02-2025 10:53:53] 127.0.0.1:64700 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-02-2025 10:53:58] Backing off send_request(...) for 3.8s (requests.exceptions.ProxyError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000257ADD9A710>, 'Connection to proxy.samba.afip.gob.ar timed out. (connect timeout=15)'))))
+[32mINFO[0m:     [26-02-2025 10:54:07] 127.0.0.1:64708 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/default HTTP/1.1" 200
+[32mINFO[0m:     [26-02-2025 10:54:07] 127.0.0.1:64708 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/4f91f682-915f-42f5-8f17-214f0ea76eeb/query HTTP/1.1" 200
+[31mERROR[0m:    [26-02-2025 10:54:16] Giving up send_request(...) after 4 tries (requests.exceptions.ProxyError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000257ADD996D0>, 'Connection to proxy.samba.afip.gob.ar timed out. (connect timeout=15)'))))
