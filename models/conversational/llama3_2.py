@@ -3,6 +3,7 @@ from transformers.pipelines import pipeline
 import torch
 from huggingface_hub import InferenceClient
 
+
 class Llama3_2_Inference:
     def __init__(self):
         self.client = InferenceClient(
